@@ -41,7 +41,7 @@ export function AccordionIcon() {
   const descVariants =
     "font-poppins font-normal text-black text-md xl:text-xl dark:text-white";
   return (
-    <div className="flex flex-col justify-between w-full mt-32 xl:flex-row">
+    <div className="flex flex-col justify-between w-full mt-32 overflow-hidden xl:flex-row">
       <motion.div
         variants={fadeLeftAnimationVariants}
         initial="initial"
@@ -85,10 +85,11 @@ export function AccordionIcon() {
               01. UX / Wireframing
             </AccordionHeader>
             <AccordionBody className={descVariants}>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Wireframing is a practice used by UX designers to define and plan
+              information hierarchies in the design of a website, application,
+              or product. This process focuses on how the designer or client
+              wants users to process information on the site, based on user
+              research that has been conducted by the UX design team
             </AccordionBody>
           </Accordion>
         </motion.div>
@@ -102,10 +103,11 @@ export function AccordionIcon() {
               02. UI / Prototyping
             </AccordionHeader>
             <AccordionBody className={descVariants}>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              UI prototyping is the process of creating an experimental model
+              that is used before finally being released to the public. In the
+              context of user interface (UI) design, prototyping helps in
+              testing ideas or concepts, as well as understanding the
+              acceptability, impact, or real value of those ideas or concepts
             </AccordionBody>
           </Accordion>
         </motion.div>
@@ -119,10 +121,9 @@ export function AccordionIcon() {
               03. Development
             </AccordionHeader>
             <AccordionBody className={descVariants}>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Development is a broad term that encompasses various aspects of
+              creating software, applications, websites, or other digital
+              products.
             </AccordionBody>
           </Accordion>
         </motion.div>
@@ -136,10 +137,10 @@ export function AccordionIcon() {
               04. Deployment
             </AccordionHeader>
             <AccordionBody className={descVariants}>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Deployment is a process that involves using or placing something,
+              whether in a software, military, or general use context. In
+              software development, deployment involves releasing software
+              applications to production servers or end users.
             </AccordionBody>
           </Accordion>
         </motion.div>
@@ -153,10 +154,9 @@ export function AccordionIcon() {
               05. Maintenance
             </AccordionHeader>
             <AccordionBody className={descVariants}>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              Maintenance refers to the ongoing process of upkeep, inspection,
+              and repair to ensure that something remains in good working
+              condition.
             </AccordionBody>
           </Accordion>
         </motion.div>
