@@ -1,7 +1,7 @@
 const PROJECT_LIST = [
   {
     id: 1,
-    image: "../../public/static/images/portofolio.png",
+    image: "/public/static/images/portofolio.png",
     title: "Personal Portofolio Website",
     description: "Web Design, Website Development",
     year: "(2023)",
@@ -9,7 +9,7 @@ const PROJECT_LIST = [
   },
   {
     id: 2,
-    image: "../../public/static/images/sistem-pakar.png",
+    image: "/public/static/images/sistem-pakar.png",
     title:
       "Penerapan Metode Forward Chaining Pada Sistem Pakar Diagnosa Penyakit Ayam Ternak",
     description: "Php, JavaScript, HTML, CSS",
@@ -18,7 +18,7 @@ const PROJECT_LIST = [
   },
   {
     id: 3,
-    image: "../../public/static/images/pariwsiata.png",
+    image: "/public/static/images/pariwsiata.png",
     title: "Pariwisata - Landing Page",
     description: "Pengembangan Website Pariwisata ",
     year: "(2023)",
@@ -26,7 +26,7 @@ const PROJECT_LIST = [
   },
   {
     id: 4,
-    image: "../../public/static/images/weather.png",
+    image: "/public/static/images/weather.png",
     title: "Weather App - Api Openweather",
     description: "Web Design, Website Development",
     year: "(2024)",
