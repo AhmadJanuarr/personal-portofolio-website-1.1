@@ -1,7 +1,12 @@
+import Image1 from "/public/static/images/portofolio.png";
+import Image2 from "/public/static/images/sistem-pakar.png";
+import Image3 from "/public/static/images/pariwsiata.png";
+import Image4 from "/public/static/images/weather.png";
+
 const PROJECT_LIST = [
   {
     id: 1,
-    image: "/public/static/images/portofolio.png",
+    image: Image1,
     title: "Personal Portofolio Website",
     description: "Web Design, Website Development",
     year: "(2023)",
@@ -9,7 +14,7 @@ const PROJECT_LIST = [
   },
   {
     id: 2,
-    image: "/public/static/images/sistem-pakar.png",
+    image: Image2,
     title:
       "Penerapan Metode Forward Chaining Pada Sistem Pakar Diagnosa Penyakit Ayam Ternak",
     description: "Php, JavaScript, HTML, CSS",
@@ -18,7 +23,7 @@ const PROJECT_LIST = [
   },
   {
     id: 3,
-    image: "/public/static/images/pariwsiata.png",
+    image: Image3,
     title: "Pariwisata - Landing Page",
     description: "Pengembangan Website Pariwisata ",
     year: "(2023)",
@@ -26,7 +31,7 @@ const PROJECT_LIST = [
   },
   {
     id: 4,
-    image: "/public/static/images/weather.png",
+    image: Image4,
     title: "Weather App - Api Openweather",
     description: "Web Design, Website Development",
     year: "(2024)",
