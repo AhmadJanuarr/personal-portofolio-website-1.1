@@ -10,7 +10,7 @@ import {
 } from "../Variants";
 import { DarkModeContext } from "../DarkModeContext.jsx";
 import { useContext } from "react";
-import Picture from "../../public/img/picture.jpeg";
+import Picture from "../../public/static/images/picture.jpeg";
 import ComponentButton from "../component/Button";
 import ComponentService from "../component/Service";
 import ComplexFooter from "../component/footer";
