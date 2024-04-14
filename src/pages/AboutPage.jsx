@@ -182,7 +182,7 @@ function ContentAbout() {
               variant="paragraph"
               className="flex items-center justify-center w-full h-full font-semibold text-black lowercase cursor-pointer font-poppins gruop-hover:invisible "
             >
-              ahmadjanuaramri2015@gmail.com
+              <a href="">ahmadjanuaramri2015@gmail.com</a>
             </Typography>
           </Button>
         </motion.div>

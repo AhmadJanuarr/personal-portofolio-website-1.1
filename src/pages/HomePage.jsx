@@ -9,11 +9,10 @@ import {
   fadeIn,
   fadeRightAnimationVariants,
 } from "../Variants";
-import image1 from "../../public/img/bg1.png";
-import image2 from "../../public/img/bg2.png";
+import { useContext } from "react";
+import PROJECT_LIST from "../projectData.js";
 import Card from "../component/card.jsx";
 import ComplexFooter from "../component/footer.jsx";
-import { useContext } from "react";
 
 function TextHeading() {
   const heading =
@@ -59,7 +58,7 @@ function TextEmail() {
       variants={fadeRightAnimationVariants}
       initial="initial"
       animate="animate"
-      className="hidden pt-10 text-right xl:block"
+      className="hidden pt-10 overflow-hidden text-right xl:block"
     >
       <Button
         className="rounded-full group relative inline-flex items-center justify-center overflow-hidden w-[21rem] h-[3.5rem] border-2 border-gray-700 "
@@ -100,25 +99,16 @@ function ProjectList() {
         whileInView={"animate"}
         viewport={{ once: true }}
       >
-        <Card
-          image={image1}
-          title="🚀Sistem Pakar Diagnosa Penyakit Ayam"
-          description="Web Design, Website Development"
-          year="(2022)"
-        />{" "}
-      </motion.div>
-      <motion.div
-        variants={fadeInAnimationVariants}
-        initial="initial"
-        whileInView={"animate"}
-        viewport={{ once: true }}
-      >
-        <Card
-          image={image2}
-          title="Sistem Pakar Diagnosa Penyakit Ayam"
-          description="Web Design, Website Development"
-          year="(2022)"
-        />
+        {PROJECT_LIST.slice(0, 2).map((item) => (
+          <Card
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            year={item.year}
+            link={item.link}
+          />
+        ))}
       </motion.div>
     </div>
   );

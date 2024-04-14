@@ -4,41 +4,11 @@ import { Typography, Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 import { DarkModeContext } from "../DarkModeContext.jsx";
-
 import { useContext } from "react";
 import Card from "../component/card";
 import ComplexFooter from "../component/footer";
-const PROJECT_LIST = [
-  {
-    id: 1,
-    image: "../../public/img/portofolio1.jpg",
-    title: "Sistem Pakar Diagnosa Penyakit Ayam",
-    description: "Web Design, Website Development",
-    year: "(2022)",
-  },
-  {
-    id: 2,
-    image: "../../public/img/portofolio2.jpg",
-    title: "Task Management - Mobile App",
-    description: "Web Design, Website Development",
-    year: "(2024)",
-  },
-  {
-    id: 3,
-    image: "../../public/img/portofolio3.jpg",
-    title: "Berumah - Real Estate Landing Page",
-    description:
-      "This time I made a landing page design about a real estate website with a modern look",
-    year: "(2020)",
-  },
-  {
-    id: 4,
-    image: "../../public/img/portofolio4.jpg",
-    title: "Gege Gemink - Games Streaming Dashboard",
-    description: "Web Design, Website Development",
-    year: "(2021)",
-  },
-];
+import PROJECT_LIST from "../projectData.js";
+
 function HeaderProject() {
   return (
     <div className="w-full mt-10">
@@ -79,13 +49,14 @@ function HeaderProject() {
               title={item.title}
               description={item.description}
               year={item.year}
+              link={item.link}
             />
           </motion.div>
         ))}
       </motion.div>
       <div className="flex items-center justify-center mt-10">
         <Button
-          className="rounded-full group relative flex items-center justify-center overflow-hidden w-[13rem]  h-[3.5rem] border-2 border-black transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-black before:duration-500 before:ease-out hover:before:h-52 before:z-1 hover:before:w-52 lg:w-[21rem]"
+          className="rounded-full group relative flex items-center justify-center overflow-hidden w-[13rem]  h-[3.5rem] border-2 border-black transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-black before:duration-500 before:ease-out hover:before:h-52 before:z-1 hover:before:w-full lg:w-[21rem]"
           variant="filled"
           ripple={false}
           color="white"
@@ -94,7 +65,9 @@ function HeaderProject() {
             variant="paragraph"
             className="absolute z-20 flex items-center justify-center w-full h-full text-3xl font-semibold text-black capitalize transition-all duration-500 cursor-pointer font-poppins group-hover:text-white"
           >
-            See More
+            <a href="https://github.com/AhmadJanuar1" target="_blank">
+              See More
+            </a>
           </Typography>
         </Button>
       </div>
