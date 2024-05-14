@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 export default function Card({ image, title, description, year, link }) {
   return (
     <div className="relative w-full mb-20 cursor-pointer laptop:mb-52 group">
-      <div className="relative overflow-hidden border laptop:w-[95%]  mx-auto">
+      <div className="relative overflow-hidden laptop:w-[95%]  mx-auto">
         <img
           src={image}
           alt={title}
