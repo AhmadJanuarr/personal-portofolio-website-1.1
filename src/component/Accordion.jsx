@@ -36,23 +36,23 @@ export function AccordionIcon() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   const titleVariants =
-    "font-poppins font-normal text-black text-3xl xl:text-5xl dark:text-white";
+    "font-poppins font-normal text-black text-3xl laptop:text-5xl dark:text-white";
 
   const descVariants =
-    "font-poppins font-normal text-black text-md xl:text-xl dark:text-white";
+    "font-poppins font-normal text-black text-md laptop:text-xl dark:text-white";
   return (
-    <div className="flex flex-col justify-between w-full mt-32 overflow-hidden xl:flex-row">
+    <div className="flex flex-col justify-between w-full mt-32 overflow-hidden laptop:flex-row">
       <motion.div
         variants={fadeLeftAnimationVariants}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="pr-3 xl:w-1/2 xl:pr-20"
+        className="pr-3 laptop:w-1/2 laptop:pr-20"
       >
         <motion.div variants={fadeLeftAnimationVariants}>
           <Typography
             variant="h1"
-            className="text-3xl font-normal font-poppins xl:text-6xl"
+            className="text-3xl font-normal font-poppins tablet:text-4xl laptop:text-6xl"
           >
             My way of getting things done
           </Typography>
@@ -60,7 +60,7 @@ export function AccordionIcon() {
         <motion.div variants={fadeLeftAnimationVariants}>
           <Typography
             variant="paragraph"
-            className="pt-10 font-normal text-md font-poppins xl:pr-10 xl:text-xl"
+            className="pt-10 font-normal text-md font-poppins laptop:pr-10 laptop:text-xl"
           >
             First, understand the problem well. Identify the part of the code
             that causes the problem and focus on the solution. Look for
@@ -74,7 +74,7 @@ export function AccordionIcon() {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="mt-10 xl:mt-0 xl:w-1/2 "
+        className="mt-10 laptop:mt-0 laptop:w-1/2 "
       >
         <motion.div variants={fadeRightAnimationVariants}>
           <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>

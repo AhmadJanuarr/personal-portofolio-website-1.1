@@ -8,12 +8,12 @@ export default function ComplexFooter() {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-      className="flex flex-col w-full mt-16 font-poppins xl:mt-64 "
+      className="flex flex-col w-full mt-16 font-poppins laptop:mt-64 "
     >
       <motion.div variants={fadeIn}>
         <Typography
           variant="h1"
-          className="text-3xl font-semibold text-center text-black uppercase dark:text-white font-poppins xl:text-left xl:w-1/2 xl:text-7xl"
+          className="text-3xl font-semibold text-center text-black uppercase dark:text-white font-poppins laptop:text-left tablet:text-4xl laptop:w-1/2 laptop:text-7xl"
         >
           Let&apos;s talk about a project, collaboration or an idea you may have
         </Typography>
@@ -23,15 +23,15 @@ export default function ComplexFooter() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true }}
-        className="flex flex-col justify-between w-full mt-5 xl:flex-row xl:my-10 xl:mt-20"
+        className="flex flex-col justify-between w-full mt-5 laptop:flex-row laptop:my-10 laptop:mt-20"
       >
         <Typography
           variant="h5"
-          className="mt-10 mb-2 text-xl font-medium text-center xl:hidden "
+          className="mt-10 mb-2 text-xl font-medium text-center laptop:hidden "
         >
           FOLLOW ALL MY ACCOUNTS :{" "}
         </Typography>
-        <div className="flex justify-center gap-5 text-xl font-medium text-center uppercase xl:flex-row xl:gap-10">
+        <div className="flex justify-center gap-5 text-xl font-medium text-center uppercase laptop:flex-row laptop:gap-10">
           <motion.a
             variants={fadeIn}
             href="https://www.instagram.com/_ahmadjanuarr/"
@@ -57,7 +57,7 @@ export default function ComplexFooter() {
         <motion.div variants={fadeIn}>
           <Typography
             variant="h5"
-            className="mt-10 text-xl font-medium text-center xl:mt-0"
+            className="mt-10 text-xl font-medium text-center laptop:mt-0"
           >
             Back to top ↑
           </Typography>
@@ -65,9 +65,9 @@ export default function ComplexFooter() {
         <motion.div variants={fadeIn}>
           <Typography
             variant="h5"
-            className="my-4 text-xl font-medium text-center xl:my-0"
+            className="my-4 text-xl font-medium text-center laptop:my-0"
           >
-            Copyright©AhmadJanuarAmri
+            Copyright©2023. AhmadJanuarAmri
           </Typography>
         </motion.div>
       </motion.div>

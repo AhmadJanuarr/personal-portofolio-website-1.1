@@ -15,34 +15,35 @@ import Card from "../component/card.jsx";
 import ComplexFooter from "../component/footer.jsx";
 
 function TextHeading() {
-  const heading =
-    "font-semibold font-poppins uppercase  text-[3rem] md:text-[3rem] xl:text-[9rem] ";
+  const variants =
+    "font-semibold font-poppins uppercase  text-[3rem] tablet:text-[3.2rem] laptop:text-[5rem] desktop:text-[9rem]";
+    
   return (
     <motion.div
       variants={fadeIn}
       initial="hidden"
       animate="show"
-      className="w-full mt-32 leading-10 lg:mt-10 xl:leading-none "
+      className="w-full leading-10 mt-28 tablet:mt-8 laptop:mt-10 laptop:leading-none"
     >
       <motion.div variants={fadeIn}>
-        <Typography variant="h1" className={` ${heading}`}>
+        <Typography variant="h1" className={` ${variants}`}>
           ✳Ahmad Januar Amri
         </Typography>
       </motion.div>
       <motion.div variants={fadeIn}>
-        <Typography variant="h1" className={`xl:text-right pr-20  ${heading}`}>
+        <Typography variant="h1" className={`laptop:text-right pr-20  ${variants}`}>
           Front End Developer
         </Typography>
       </motion.div>
       <motion.div variants={fadeIn}>
-        <Typography variant="h1" className={`xl:text-center ${heading}`}>
+        <Typography variant="h1" className={`laptop:text-center ${variants}`}>
           Web Designer
         </Typography>
       </motion.div>
       <motion.div variants={fadeIn}>
         <Typography
           variant="h2"
-          className="pt-10 text-xl font-medium uppercase font-inter xl:text-2xl xl:w-1/2"
+          className="pt-10 text-xl font-medium uppercase font-inter laptop:text-2xl laptop:w-1/2"
         >
           ❝Through strategic art direction and webdesign I help companies around
           the world grow their business.❞
@@ -58,7 +59,7 @@ function TextEmail() {
       variants={fadeRightAnimationVariants}
       initial="initial"
       animate="animate"
-      className="hidden pt-10 overflow-hidden text-right xl:block"
+      className="hidden pt-10 overflow-hidden text-right laptop:block"
     >
       <Button
         className="rounded-full group relative inline-flex items-center justify-center overflow-hidden w-[21rem] h-[3.5rem] border-2 border-gray-700 "
@@ -83,12 +84,12 @@ function ProjectList() {
   return (
     <div className="w-full mt-36">
       <div className="flex justify-between pb-5">
-        <Typography className="text-xl font-normal font-poppins xl:text-2xl">
+        <Typography className="text-xl font-normal font-poppins laptop:text-2xl">
           Selected Work
         </Typography>
         <Typography
           variant="h5"
-          className="text-xl font-normal font-poppins xl:text-2xl"
+          className="text-xl font-normal font-poppins laptop:text-2xl"
         >
           Discover↓
         </Typography>

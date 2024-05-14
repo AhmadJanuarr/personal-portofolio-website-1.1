@@ -16,16 +16,16 @@ function HeaderProject() {
         <motion.div variants={fadeIn}>
           <Typography
             variant="h1"
-            className=" font-semibold font-inter uppercase leading-none  mt-28 lg:mt-0 lg:w-[70%] lg:text-[7rem]  "
+            className=" font-semibold font-inter uppercase leading-none mt-28 tablet:mt-0 laptop:w-[70%] tablet:text-[7rem]  "
           >
-            <span className="text-6xl lg:text-9xl">FEATURED PROJECTS</span>{" "}
+            <span className="text-6xl tablet:text-9xl">FEATURED PROJECTS</span>{" "}
             (2018 — 2024)
           </Typography>
         </motion.div>
         <motion.div variants={fadeIn}>
           <Typography
             variant="h2"
-            className="pt-10 text-2xl font-medium font-inter lg:text-4xl lg:w-2/5"
+            className="pt-10 text-2xl font-medium font-inter tablet:text-4xl laptop:w-2/5"
           >
             Have a look at some of the projects I’ve worked on. Clients vary
             from lifestyle to tech and design companies.
@@ -56,7 +56,7 @@ function HeaderProject() {
       </motion.div>
       <div className="flex items-center justify-center mt-10">
         <Button
-          className="rounded-full group relative flex items-center justify-center overflow-hidden w-[13rem]  h-[3.5rem] border-2 border-black transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-black before:duration-500 before:ease-out hover:before:h-52 before:z-1 hover:before:w-full lg:w-[21rem]"
+          className="rounded-full group relative flex items-center justify-center overflow-hidden w-[13rem]  h-[3.5rem] border-2 border-black transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-black before:duration-500 before:ease-out hover:before:h-52 before:z-1 hover:before:w-full tablet:w-[21rem]"
           variant="filled"
           ripple={false}
           color="white"
@@ -83,7 +83,7 @@ const WrapperProjectPage = () => {
       <ComplexNavbar />
       <hr className="border-1 border-[#524F4F] " />
       <HeaderProject />
-      <hr className="border-1 border-[#524F4F] mt-20 lg:mt-0 lg:hidden" />
+      <hr className="border-1 border-[#524F4F] mt-20 lg:mt-0 tablet:hidden" />
       <ComplexFooter />
     </Template>
   );

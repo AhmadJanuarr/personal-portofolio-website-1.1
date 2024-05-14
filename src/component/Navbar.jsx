@@ -91,33 +91,33 @@ export function ComplexNavbar() {
   };
   return (
     <div className="fixed top-0 left-0 z-50 w-full md:static ">
-      <div className="items-center justify-between bg-white dark:bg-black md:flex py-7 md:px-10 px-7 font-poppins">
+      <div className="items-center justify-between bg-white dark:bg-black md:flex py-7 px-7 font-poppins">
         {/* logo section */}
-        <div className="flex items-center gap-1 text-2xl font-medium uppercase cursor-pointer xl:text-4xl ">
+        <div className="flex items-center gap-1 text-2xl font-medium uppercase cursor-pointer laptop:text-4xl ">
           <span>Ahmad Januar.</span>
         </div>
 
         {/* Menu icon */}
         <div
           onClick={toggleMenu}
-          className="absolute flex-col items-center justify-between w-10 h-10 text-2xl cursor-pointer right-14 top-6 md:hidden"
+          className="absolute flex-col items-center justify-between w-10 h-10 text-2xl cursor-pointer right-14 top-6 laptop:hidden"
         >
           Menu
         </div>
 
         {/* linke items */}
-        <ul className="absolute left-0 hidden w-full pb-12 bg-white dark:bg-black md:flex md:items-center md:pb-0 md:static md:w-auto md:pl-0 pl-9 md:block">
-          {navLinks.map((item) => (
+        <ul className="absolute left-0 hidden w-full pb-12 bg-white pl-9 dark:bg-black laptop:flex laptop:items-center laptop:pb-0 laptop:static laptop:w-auto laptop:pl-0 ">
+          {navLinks.map((item, index) => (
             <li
-              className="text-4xl font-medium uppercase md:ml-8 md:my-0 my-7 "
-              key={item.label}
+              className="text-4xl font-medium uppercase my-7 laptop:ml-8 laptop:my-0"
+              key={index}
             >
               <Link to={item.link} className="relative duration-500 ">
                 {item.label}
               </Link>
             </li>
           ))}
-          <li className="text-4xl font-medium md:ml-8 md:my-0 my-7 ">
+          <li className="text-4xl font-medium my-7 laptop:ml-8 laptop:my-0 ">
             <button
               className="uppercase cursor-pointer"
               onClick={toggleDarkMode}
@@ -135,7 +135,7 @@ export function ComplexNavbar() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed top-0 left-0 w-full h-screen p-5 text-white origin-top bg-black"
+              className="fixed top-0 left-0 z-50 w-full h-screen p-5 text-white origin-top bg-black"
             >
               <div className="flex flex-col h-full">
                 <div className="flex justify-between">

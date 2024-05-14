@@ -10,11 +10,11 @@ import {
 } from "../Variants";
 import { DarkModeContext } from "../DarkModeContext.jsx";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import Picture from "../../public/static/images/picture.jpeg";
 import ComponentButton from "../component/Button";
 import ComponentService from "../component/Service";
 import ComplexFooter from "../component/footer";
-import { Link } from "react-router-dom";
 
 const SosialMediaList = [
   {
@@ -62,7 +62,7 @@ function HeaderAbout() {
       <motion.div variants={fadeIn}>
         <Typography
           variant="h1"
-          className=" font-semibold font-poppins uppercase text-center text-[3rem] xl:text-[11rem]"
+          className=" font-semibold font-poppins uppercase text-center text-[3rem] laptop:text-[11rem]"
         >
           hello there✳
         </Typography>
@@ -71,7 +71,7 @@ function HeaderAbout() {
       <motion.div variants={fadeIn}>
         <Typography
           variant="h2"
-          className="w-full text-xl font-semibold tracking-normal text-center text-black uppercase dark:text-white font-poppins xl:text-4xl"
+          className="w-full text-xl font-semibold tracking-normal text-center text-black uppercase dark:text-white font-poppins laptop:text-4xl"
         >
           my name is ahmad januar amri usually called ahmad I live in Lampung -
           indonesia
@@ -81,7 +81,7 @@ function HeaderAbout() {
       <motion.div variants={fadeIn}>
         <Typography
           variant="h2"
-          className="w-full text-xl font-normal tracking-normal text-center text-black uppercase dark:text-white font-poppins xl:text-4xl"
+          className="w-full text-xl font-normal tracking-normal text-center text-black uppercase dark:text-white font-poppins laptop:text-4xl"
         >
           I graduated from Technocratic University of Indonesia majoring in
           informatics with an ipk of 3.18 located in bandar lampung
@@ -96,7 +96,7 @@ function HeaderAbout() {
       >
         <Typography
           variant="small"
-          className="font-medium text-center text-gray-600 font-poppins md:text-left xl:w-1/3 xl:text-lg"
+          className="font-medium text-center text-gray-600 font-poppins tablet:text-left laptop:w-1/3 laptop:text-lg"
         >
           I have skills in creating graphic designs and 3D animations using
           Microsoft Office, Blender, and Corel Draw. I also have knowledge basic
@@ -104,7 +104,7 @@ function HeaderAbout() {
         </Typography>
         <Typography
           variant="small"
-          className="hidden font-medium text-gray-600 font-poppins md:block xl:w-1/3 xl:text-lg "
+          className="hidden font-medium text-gray-600 font-poppins md:block laptop:w-1/3 laptop:text-lg "
         >
           I have created an expert system website as the final project of the
           lecture with the title Application of forward chaining method on an
@@ -115,7 +115,7 @@ function HeaderAbout() {
         </Typography>
         <Typography
           variant="small"
-          className="hidden font-medium text-gray-600 font-poppins md:block xl:w-1/3 xl:text-lg "
+          className="hidden font-medium text-gray-600 font-poppins tablet:block xl:w-1/3 laptop:text-lg "
         >
           say hello to me on my email address or on my social media account{" "}
           <span className="text-black underline decoration-solid">
@@ -123,7 +123,7 @@ function HeaderAbout() {
           </span>
         </Typography>
       </motion.div>
-      <div className="flex flex-col w-full gap-5 px-4 mb-32 md:flex-row">
+      <div className="flex flex-col w-full gap-5 px-4 mb-32 laptop:flex-row">
         {SosialMediaList &&
           SosialMediaList.map((item) => (
             <ComponentButton key={item.id}>
@@ -152,7 +152,7 @@ function HeaderAbout() {
 function ContentAbout() {
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between mt-20 md:mt-72">
+      <div className="flex items-center justify-between mt-20 overflow-hidden laptop:mt-72">
         <motion.div
           variants={fadeLeftAnimationVariants}
           initial="initial"
@@ -161,7 +161,7 @@ function ContentAbout() {
         >
           <Typography
             variant="h1"
-            className="font-semibold font-poppins md:text-9xl"
+            className="font-semibold font-poppins tablet:text-9xl"
           >
             services
           </Typography>
@@ -173,7 +173,7 @@ function ContentAbout() {
           viewport={{ once: true }}
         >
           <Button
-            className="rounded-full group relative inline-flex items-center justify-center overflow-hidden w-[21rem] h-[3.5rem] border-2 border-gray-700 hidden xl:block"
+            className="rounded-full group relative items-center justify-center w-[21rem] h-[3.5rem] border-2 border-gray-700 hidden laptop:block "
             variant="filled"
             ripple={false}
             color="white"
@@ -213,7 +213,7 @@ function ContentAbout() {
       <div className="flex flex-col items-center justify-center w-full md:mt-36">
         <Typography
           variant="h2"
-          className="text-2xl font-semibold text-center font-poppins md:text-9xl"
+          className="text-4xl font-semibold text-center font-poppins tablet:text-6xl laptop:text-9xl"
         >
           Get in touch with me and I will get back to you as soon as possible
         </Typography>
@@ -226,7 +226,7 @@ function ContentAbout() {
         >
           <Typography
             variant="paragraph"
-            className="absolute flex items-center justify-center w-full h-full text-xl font-semibold text-black cursor-pointer font-poppins gruop-hover:invisible md:text-3xl"
+            className="absolute flex items-center justify-center w-full h-full text-xl font-semibold text-black cursor-pointer font-poppins gruop-hover:invisible tablet:text-3xl"
           >
             {" "}
             <a href="https://wa.me/089630507889" target="_blank">
@@ -248,7 +248,6 @@ const WrapperAboutPage = () => {
       <hr className="border-1 border-[#524F4F] " />
       <HeaderAbout />
       <ContentAbout />
-      <hr className="border-1 border-[#524F4F] lg:hidden" />
       <ComplexFooter />
     </Template>
   );

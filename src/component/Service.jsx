@@ -20,13 +20,13 @@ export default function ComponentService({ no, title, description }) {
         </Typography>
       </motion.div>
 
-      <motion.div variants={fadeIn} className=" md:w-1/3 md:ml-20">
+      <motion.div variants={fadeIn} className=" tablet:w-1/3 tablet:ml-20">
         <Typography variant="h1" className="font-medium font-poppins">
           {title}
         </Typography>
       </motion.div>
 
-      <motion.div variants={fadeIn} className="ml-16 md:w-1/3 md:ml-20">
+      <motion.div variants={fadeIn} className="ml-16 tablet:w-1/3 laptop:ml-20">
         <Typography className="font-normal font-poppins">
           {description}
         </Typography>
