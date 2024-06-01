@@ -5,6 +5,7 @@ export default function Card({ image, title, description, year, link }) {
     <div className="relative w-full mb-20 cursor-pointer laptop:mb-52 group">
       <div className="relative overflow-hidden laptop:w-[95%]  mx-auto">
         <img
+          loading="lazy"
           src={image}
           alt={title}
           className="object-cover object-top transition duration-500 ease-in-out transform rounded-lg laptop:w-full laptop:h-full group-hover:scale-105 group-hover:brightness-75"
